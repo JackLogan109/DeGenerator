@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Де-Генератор</title>
+    <link rel="stylesheet" href="calk.css">
+</head>
+<body>
+    <header>
+        <h1>Де-Генератор inc</h1>
+        <ul>
+            <li><a href="index.html">Генератор стоки</a></li>
+            <li><a href="calkulator.html">Рассчёт даты</a></li>
+            <li><a href="comiss.html">Рассчёт комиссий</a></li>
+        </ul> 
+    </header>
+    <main>
+        <h2>Калькулятор дат</h2>
+        <div class="container">
+            <h3 class="header">Рассчитать количество дней между датами</h3>
+            <section class="left" >
+                <label for="fCheck" class="sideVerhniу">Включительно</label>
+                <input type="checkbox" id="fCheck" checked class="sideVerhniу"><br>
+                <label for="fDate">С даты</label><br>
+                <input type="text" id="fDate"  class="stroki">
+            </section>
+            <section class="center">
+                <input type="button" value="Рассчитать" id="button1" class="verhniу"><br>
+                <label for="days">Количество дней</label><br>
+                <input type="number" id="days" readonly class="stroki"><br>               
+            </section>
+            <section class="right">
+                <input type="checkbox" id="lCheck" checked  class="sideVerhniу">
+                <label for="lCheck" checked class="sideVerhniу">Включительно</label><br>
+                <label for="lDate">До даты</label><br>
+                <input type="text" id="lDate"  class="stroki">
+            </section>
+        </div>
+        <div>
+            <div class="container">
+                <h3 class="header">Рассчитать дату по количеству дней</h3>
+                <section class="left" >
+                    <label for="oCheck" class="sideVerhniу">Считать первый день</label>
+                    <input type="checkbox" id="oCheck" checked class="sideVerhniу"><br>
+                    <label for="oDate">С даты</label><br>
+                    <input type="text" id="oDate"  class="stroki">
+                </section>
+                <section class="center">
+                    <input type="button" value="Рассчитать" id="button2" class="verhniу"><br>
+                    <label for="daysCount">Количество дней</label><br>
+                    <input type="number" id="daysCount" class="stroki"><br>               
+                </section>
+                <section class="right">
+                    <p class="sideVerhniу"> . </p>
+                    <label for="eDate">Искомая дата</label><br>
+                    <input type="text" id="eDate"  class="neznay" readonly>
+                </section>
+            </div>      
+    </main>
+    <script type="module" src="calc.js" ></script>
+</body>
+</html>

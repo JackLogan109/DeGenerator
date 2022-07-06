@@ -1,0 +1,30 @@
+.container {
+    margin-left: 50px;
+    column-count: 3;
+    width: 600px;
+}
+.header {
+    text-align: center;
+    column-span: all;
+}
+.left{
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.stroki {
+    margin-top: 10px;
+}
+.verhniу {
+    margin-bottom: 10px;
+}
+.sideVerhniу {
+    margin-bottom: 15px;
+}
+.neznay {
+    margin-top: 8px;
+}

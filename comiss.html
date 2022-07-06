@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Де-Генератор</title>
+    <link rel="stylesheet" href="comiss.css">
+</head>
+<body>
+    <header>
+        <h1>Де-Генератор inc</h1>
+        <ul>
+            <li><a href="index.html">Генератор стоки</a></li>
+            <li><a href="calkulator.html">Рассчёт даты</a></li>
+            <li><a href="comiss.html">Рассчёт комиссий</a></li>
+        </ul> 
+    </header>
+    <main>
+        <h2>Рассчёт комиссий</h2>
+        <section>
+            <label for="date">Дата</label>
+            <input type="text" id="date">
+            <label for="cost">Стоимость</label>
+            <input type="number" id="cost" step="0.01">
+        </section>
+        <section class="abzac">
+            <label for="comAmount0">Комиссия 1 (%)</label>
+            <input type="number" id="comAmount0"step="0.01">
+            <label for="period0">За период</label>
+            <select id="period0">
+                <option value="perDay">В день</option>
+                <option value="perYear">В год</option>
+                <option value="period">За период</option>
+            </select>
+            <label for="comFrom0">C</label>
+            <input type="number" id="comFrom0" class="sroki">
+            <label for="comFor0">По</label>
+            <input type="number"id="comFor0" class="sroki">
+        </section>
+        <section class="vnutrenniy">
+            <label for="comAmount1">Комиссия 2 (%)</label>
+            <input type="number" id="comAmount1" step="0.01">
+            <label for="period1">За период</label>
+            <select id="period1">
+                <option value="perDay">В день</option>
+                <option value="perYear">В год</option>
+                <option value="period">За период</option>
+            </select>
+            <label for="comFrom1">C</label>
+            <input type="number" id="comFrom1" class="sroki">
+            <label for="comFor1">По</label>
+            <input type="number"id="comFor1" class="sroki">
+        </section>
+        <section class="vnutrenniy">
+            <label for="comAmount2">Комиссия 3 (%)</label>
+            <input type="number" id="comAmount2" step="0.01">
+            <label for="period2">За период</label>
+            <select id="period2">
+                <option value="perDay">В день</option>
+                <option value="perYear">В год</option>
+                <option value="period">За период</option>
+            </select>
+            <label for="comFrom2">C</label>
+            <input type="number" id="comFrom2" class="sroki">
+            <label for="comFor2">По</label>
+            <input type="number"id="comFor2"class="sroki">
+        </section>
+        <section class="vnutrenniy">
+            <label for="comAmount3">Комиссия 4 (%)</label>
+            <input type="number" id="comAmount3" step="0.01">
+            <label for="period3">За период</label>
+            <select id="period3">
+                <option value="perDay">В день</option>
+                <option value="perYear">В год</option>
+                <option value="period">За период</option>
+            </select>
+            <label for="comFrom3">C</label>
+            <input type="number" id="comFrom3" class="sroki">
+        </section>
+        <section class="abzac">
+            <div>
+                <label for="days">Общее количество</label>
+                <label for="dni">дней</label>
+                <input type="radio" name="radio" id="dni" checked>
+                <input type="number" id="days"><br>
+            </div>
+            <div class="vnutrenniy">
+                <label for="desired" class="date">Рассчитать на</label>
+                <label for="desData">дату</label>
+                <input type="radio" name="radio" id="desData">
+                <input type="text" id="desired">
+                <input type="button" value="Сформировать" class="but" id="button">
+            </div>
+        </section>
+        <div id="div1"></div>
+    </main>
+    <script type="module" src="comiss.js" ></script>
+</body>
+</html>

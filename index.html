@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Де-Генератор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Де-Генератор inc</h1>
+        <ul>
+            <li><a href="index.html">Генератор стоки</a></li>
+            <li><a href="calkulator.html">Рассчёт даты</a></li>
+            <li><a href="comiss.html">Рассчёт комиссий</a></li>
+        </ul>
+        
+    </header>
+    <main>
+        <h2>Генератор стоки по заданным параметрам</h2>
+        <section>
+            <label>
+               Выбор символов из списка <input name="1" type="radio" id="che" checked>
+            </label><br>
+            <label>
+               Ручной ввод символов <input name="1" type="radio" id="inp">
+            </label>
+        </section>
+        <section id="ch1" >
+        <label>
+            Латинские строчные <input type="checkbox" id="1">
+        </label><br>
+        <label>
+            Латинские заглавные <input type="checkbox" id="2">
+        </label><br>
+        <label>
+            Кириллица строчные <input type="checkbox" id="3">
+        </label><br>
+        <label>
+            Кириллица заглавные <input type="checkbox" id="4">
+        </label><br>
+        <label>
+            Цифры <input type="checkbox" id="5">
+        </label><br>
+        <label>
+            Специальные символы (!"№") <input type="checkbox" id="6">
+        </label><br>
+        <label>
+            Использовать пробелы <input type="checkbox" id="7">
+        </label><br>
+        <label>
+            Уберите ненужные сиволы <input type="text" id="8">
+        </label><br>
+        </section>
+        <section id="ch2" hidden>
+        <label>
+            Использовать только символы <input type="text" id="9">
+        </label>
+    </section>
+    <section>
+        <label class="kolvo">
+            Введите Количество символов<input type="number" id="10">
+        </label>
+    </section>
+    <section>
+        <label>
+         <input type="button" id="11" value="Генерить">
+        </label>
+    </section>
+    <section>
+        <label>
+            Результат <textarea rows="5" cols="70" id="12" readonly></textarea>
+        </label>
+    </section>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

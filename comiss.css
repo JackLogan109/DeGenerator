@@ -1,0 +1,26 @@
+.table {
+    margin-top: 10px;
+    border-top: solid 3px;
+  }
+.stroka {
+    border-bottom: solid 1px;
+  }
+.kletka {
+    border-left: solid 1px;
+  }
+.sroki {
+    width: 60px;
+  }
+.abzac {
+    padding-top: 20px;
+  }
+.vnutrenniy {
+    padding-top: 10px;
+  }
+.but {
+    margin-left: 100px;
+  }
+.date {
+    margin-top: 20px;
+    padding-left: 35px;
+  }
